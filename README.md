@@ -295,8 +295,6 @@ For some general best practices, you can also review this
 
 ## My API key:
 
-AIzaSyB-NpvA67DDWNL9X42Cx3b42fzS_9gNosw
-
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/b20ca2c3-f799-4c98-96a9-b49910f3dc24" />
 
 
