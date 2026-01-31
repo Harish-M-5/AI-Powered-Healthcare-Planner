@@ -61,7 +61,69 @@ The key features are:
 <a href="https://docs.render.com/deploy-fastapi?utm_source=deploydoc&utm_medium=referral&utm_campaign=fastapi" target="_blank" title="Deploy & scale any full-stack web app on Render. Focus on building apps, not infra."><img src="https://fastapi.tiangolo.com/img/sponsors/render.svg"></a>
 <a href="https://www.coderabbit.ai/?utm_source=fastapi&utm_medium=badge&utm_campaign=fastapi" target="_blank" title="Cut Code Review Time & Bugs in Half with CodeRabbit"><img src="https://fastapi.tiangolo.com/img/sponsors/coderabbit.png"></a>
 
+allows you to fill the parameters and directly interact with the API:
 
+![Swagger UI interaction](https://fastapi.tiangolo.com/img/index/index-04-swagger-03.png)
+
+* Then click on the "Execute" button, the user interface will communicate with your API, send the parameters, get the results and show them on the screen:
+
+![Swagger UI interaction](https://fastapi.tiangolo.com/img/index/index-05-swagger-04.png)
+
+### Alternative API docs upgrade
+
+And now, go to <a href="http://127.0.0.1:8000/redoc" class="external-link" target="_blank">http://127.0.0.1:8000/redoc</a>.
+
+* The alternative documentation will also reflect the new query parameter and body:
+
+![ReDoc](https://fastapi.tiangolo.com/img/index/index-06-redoc-02.png)
+
+### Recap
+
+In summary, you declare **once** the types of parameters, body, etc. as function parameters.
+
+You do that with standard modern Python types.
+
+You don't have to learn a new syntax, the methods or classes of a specific library, etc.
+
+Just standard **Python**.
+
+For example, for an `int`:
+
+```Python
+item_id: int
+```
+
+or for a more complex `Item` model:
+
+```Python
+item: Item
+```
+
+...and with that single declaration you get:
+
+* Editor support, including:
+    * Completion.
+    * Type checks.
+* Validation of data:
+    * Automatic and clear errors when the data is invalid.
+    * Validation even for deeply nested JSON objects.
+* <abbr title="also known as: serialization, parsing, marshalling">Conversion</abbr> of input data: coming from the network to Python data and types. Reading from:
+    * JSON.
+    * Path parameters.
+    * Query parameters.
+    * Cookies.
+    * Headers.
+    * Forms.
+    * Files.
+* <abbr title="also known as: serialization, parsing, marshalling">Conversion</abbr> of output data: converting from Python data and types to network data (as JSON):
+    * Convert Python types (`str`, `int`, `float`, `bool`, `list`, etc).
+    * `datetime` objects.
+    * `UUID` objects.
+    * Database models.
+    * ...and many more.
+* Automatic interactive API documentation, including 2 alternative user interfaces:
+    * Swagger UI.
+    * ReDoc.
 
 
 ---
