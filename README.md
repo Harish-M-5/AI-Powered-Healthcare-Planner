@@ -62,30 +62,12 @@ The key features are:
 
 <small>* estimation based on tests conducted by an internal development team, building production applications.</small>
 
-## Sponsors
-
-<!-- sponsors -->
-### Keystone Sponsor
-
-<a href="https://fastapicloud.com" target="_blank" title="FastAPI Cloud. By the same team behind FastAPI. You code. We Cloud."><img src="https://fastapi.tiangolo.com/img/sponsors/fastapicloud.png"></a>
-
-### Gold and Silver Sponsors
-
-allows you to fill the parameters and directly interact with the API:
-
-![Swagger UI interaction](https://fastapi.tiangolo.com/img/index/index-04-swagger-03.png)
-
-* Then click on the "Execute" button, the user interface will communicate with your API, send the parameters, get the results and show them on the screen:
-
-![Swagger UI interaction](https://fastapi.tiangolo.com/img/index/index-05-swagger-04.png)
 
 ### Alternative API docs upgrade
 
 And now, go to <a href="http://127.0.0.1:8000/redoc" class="external-link" target="_blank">http://127.0.0.1:8000/redoc</a>.
 
 * The alternative documentation will also reflect the new query parameter and body:
-
-![ReDoc](https://fastapi.tiangolo.com/img/index/index-06-redoc-02.png)
 
 ### Recap
 
@@ -183,38 +165,6 @@ project in Google AI Studio by navigating to **Projects** view in the
 choosing **Rename project**. Existing users, or users who already have Google
 Cloud Accounts won't have a default project created.
 
-## Import projects
-
-Each Gemini API key is associated with a Google Cloud project. By default,
-Google AI Studio does not show all of your Cloud Projects. You must import the
-projects you want by searching for the name or project ID in the
-**Import Projects** dialog. To view a complete list of projects you have access
-to, visit the Cloud Console.
-
-If you don't have any projects imported yet, follow these steps to import a
-Google Cloud project and create a key:
-
-1. Go to [Google AI Studio](https://aistudio.google.com).
-2. Open the **Dashboard** from the left side panel.
-3. Select **Projects**.
-4. Select the **Import projects** button in the **Projects** page.
-5. Search for and select the Google Cloud project you want to import and select the **Import** button.
-
-Once a project is imported, go to the **API Keys** page from the **Dashboard**
-menu and create an API key in the project you just imported.
-| **Note:** For existing users, the keys are pre-populated in the imports pane based on the last 30-days of activity in AI Studio.
-
-## Limitations
-
-The following are limitations of managing API keys and Google Cloud projects in
-Google AI Studio.
-
-- You can create a maximum of 10 project at a time from the Google AI Studio **Projects** page.
-- You can name and rename projects and keys.
-- The **API keys** and **Projects** pages display a maximum of 100 keys and 50 projects.
-- Only API keys that have no restrictions, or are restricted to the Generative Language API are displayed.
-
-For additional management access to your projects, visit the Google Cloud Console.
 
 ## Setting the API key as an environment variable
 
@@ -230,47 +180,6 @@ provide the API key explicitly.
 Here is how you can set your API key locally as the environment variable
 `GEMINI_API_KEY` with different operating systems.  
 
-### Linux/macOS - Bash
-
-Bash is a common Linux and macOS terminal configuration. You can check if
-you have a configuration file for it by running the following command:  
-
-    ~/.bashrc
-
-If the response is "No such file or directory", you will need to create this
-file and open it by running the following commands, or use `zsh`:  
-
-    touch ~/.bashrc
-    open ~/.bashrc
-
-Next, you need to set your API key by adding the following export command:  
-
-    export GEMINI_API_KEY=<YOUR_API_KEY_HERE>
-
-After saving the file, apply the changes by running:  
-
-    source ~/.bashrc
-
-### macOS - Zsh
-
-Zsh is a common Linux and macOS terminal configuration. You can check if
-you have a configuration file for it by running the following command:  
-
-    ~/.zshrc
-
-If the response is "No such file or directory", you will need to create this
-file and open it by running the following commands, or use `bash`:  
-
-    touch ~/.zshrc
-    open ~/.zshrc
-
-Next, you need to set your API key by adding the following export command:  
-
-    export GEMINI_API_KEY=<YOUR_API_KEY_HERE>
-
-After saving the file, apply the changes by running:  
-
-    source ~/.zshrc
 
 ### Windows
 
