@@ -1,0 +1,82 @@
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+.hero {
+  height: 100vh;
+  background: linear-gradient(135deg,#0f9b8e,#0d6e6e);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-left {
+  text-align: center;
+  max-width: 600px;
+}
+
+button {
+  padding: 12px 25px;
+  border: none;
+  border-radius: 25px;
+  background: white;
+  color: #0d6e6e;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.result-container {
+  padding: 40px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.plan-box {
+  background: #f5f7f8;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+  white-space: pre-wrap;
+}
+
+.roadmap-btn {
+  margin-top: 25px;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 25px;
+  background: #0f9b8e;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.form-container {
+  max-width: 500px;
+  margin: 40px auto;
+  text-align: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form input,
+.form select {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.form button {
+  padding: 12px;
+  border: none;
+  border-radius: 25px;
+  background: #0f9b8e;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
