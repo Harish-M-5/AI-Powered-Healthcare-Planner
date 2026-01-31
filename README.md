@@ -32,19 +32,6 @@ The system ensures a structured and visually organized output UI.
 
 ---
 
-# 🔮 Future Scope
-
-- User authentication (Login/Register)
-- User profile history tracking
-- Save previous health plans
-- Advanced calorie calculation engine
-- BMI & body fat analysis
-- AI chatbot integration
-- Mobile app version
-- Doctor appointment integration
-
-
----
 
 # ⚙️ Installation and Setup
 
@@ -53,28 +40,6 @@ The system ensures a structured and visually organized output UI.
 
 ## FastAPI Setup:
 
-<p align="center">
-  <a href="https://fastapi.tiangolo.com"><img src="https://fastapi.tiangolo.com/img/logo-margin/logo-teal.png" alt="FastAPI"></a>
-</p>
-<p align="center">
-    <em>FastAPI framework, high performance, easy to learn, fast to code, ready for production</em>
-</p>
-<p align="center">
-<a href="https://github.com/fastapi/fastapi/actions?query=workflow%3ATest+event%3Apush+branch%3Amaster" target="_blank">
-    <img src="https://github.com/fastapi/fastapi/actions/workflows/test.yml/badge.svg?event=push&branch=master" alt="Test">
-</a>
-<a href="https://coverage-badge.samuelcolvin.workers.dev/redirect/fastapi/fastapi" target="_blank">
-    <img src="https://coverage-badge.samuelcolvin.workers.dev/fastapi/fastapi.svg" alt="Coverage">
-</a>
-<a href="https://pypi.org/project/fastapi" target="_blank">
-    <img src="https://img.shields.io/pypi/v/fastapi?color=%2334D058&label=pypi%20package" alt="Package version">
-</a>
-<a href="https://pypi.org/project/fastapi" target="_blank">
-    <img src="https://img.shields.io/pypi/pyversions/fastapi.svg?color=%2334D058" alt="Supported Python versions">
-</a>
-</p>
-
----
 
 **Documentation**: <a href="https://fastapi.tiangolo.com" target="_blank">https://fastapi.tiangolo.com</a>
 
@@ -105,15 +70,6 @@ The key features are:
 <a href="https://fastapicloud.com" target="_blank" title="FastAPI Cloud. By the same team behind FastAPI. You code. We Cloud."><img src="https://fastapi.tiangolo.com/img/sponsors/fastapicloud.png"></a>
 
 ### Gold and Silver Sponsors
-
-<a href="https://blockbee.io?ref=fastapi" target="_blank" title="BlockBee Cryptocurrency Payment Gateway"><img src="https://fastapi.tiangolo.com/img/sponsors/blockbee.png"></a>
-<a href="https://github.com/scalar/scalar/?utm_source=fastapi&utm_medium=website&utm_campaign=main-badge" target="_blank" title="Scalar: Beautiful Open-Source API References from Swagger/OpenAPI files"><img src="https://fastapi.tiangolo.com/img/sponsors/scalar.svg"></a>
-<a href="https://www.propelauth.com/?utm_source=fastapi&utm_campaign=1223&utm_medium=mainbadge" target="_blank" title="Auth, user management and more for your B2B product"><img src="https://fastapi.tiangolo.com/img/sponsors/propelauth.png"></a>
-<a href="https://zuplo.link/fastapi-gh" target="_blank" title="Zuplo: Deploy, Secure, Document, and Monetize your FastAPI"><img src="https://fastapi.tiangolo.com/img/sponsors/zuplo.png"></a>
-<a href="https://liblab.com?utm_source=fastapi" target="_blank" title="liblab - Generate SDKs from FastAPI"><img src="https://fastapi.tiangolo.com/img/sponsors/liblab.png"></a>
-<a href="https://docs.render.com/deploy-fastapi?utm_source=deploydoc&utm_medium=referral&utm_campaign=fastapi" target="_blank" title="Deploy & scale any full-stack web app on Render. Focus on building apps, not infra."><img src="https://fastapi.tiangolo.com/img/sponsors/render.svg"></a>
-<a href="https://www.coderabbit.ai/?utm_source=fastapi&utm_medium=badge&utm_campaign=fastapi" target="_blank" title="Cut Code Review Time & Bugs in Half with CodeRabbit"><img src="https://fastapi.tiangolo.com/img/sponsors/coderabbit.png"></a>
-
 
 allows you to fill the parameters and directly interact with the API:
 
@@ -365,60 +321,6 @@ Below are examples for how you can provide an API key explicitly:
 
     main();
 
-### Go
-
-    package main
-
-    import (
-        "context"
-        "fmt"
-        "log"
-        "google.golang.org/genai"
-    )
-
-    func main() {
-        ctx := context.Background()
-        client, err := genai.NewClient(ctx, &genai.ClientConfig{
-            APIKey:  "<var translate="no">YOUR_API_KEY</var>",
-            Backend: genai.BackendGeminiAPI,
-        })
-        if err != nil {
-            log.Fatal(err)
-        }
-
-        result, err := client.Models.GenerateContent(
-            ctx,
-            "gemini-3-flash-preview",
-            genai.Text("Explain how AI works in a few words"),
-            nil,
-        )
-        if err != nil {
-            log.Fatal(err)
-        }
-        fmt.Println(result.Text())
-    }
-
-### Java
-
-    package com.example;
-
-    import com.google.genai.Client;
-    import com.google.genai.types.GenerateContentResponse;
-
-    public class GenerateTextFromTextInput {
-      public static void main(String[] args) {
-        Client client = Client.builder().apiKey("<var translate="no">YOUR_API_KEY</var>").build();
-
-        GenerateContentResponse response =
-            client.models.generateContent(
-                "gemini-3-flash-preview",
-                "Explain how AI works in a few words",
-                null);
-
-        System.out.println(response.text());
-      }
-    }
-
 ### REST
 
     curl "https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent" \
@@ -482,13 +384,14 @@ For some general best practices, you can also review this
 [support article](https://support.google.com/googleapi/answer/6310037).
 
 
-My API key:
+## My API key:
 
 AIzaSyB-NpvA67DDWNL9X42Cx3b42fzS_9gNosw
 
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/b20ca2c3-f799-4c98-96a9-b49910f3dc24" />
 
 
+## My setup
 
 ```bash
 cd backend
@@ -826,27 +729,35 @@ client = genai.Client()
 ---
 
 
-© 2026 Harish – Full Stack AI Developer
-
-
 ##Output<img width="1920" height="1080" alt="Screenshot 2026-01-31 112543" src="https://github.com/user-attachments/assets/f2cde588-2e21-4005-b426-9e486845a89c" />
 <img width="1920" height="1080" alt="Screenshot 2026-01-31 112601" src="https://github.com/user-attachments/assets/a8f4eb95-3cf2-48cb-b1ab-9ef8b7e695ed" />
 <img width="1920" height="1080" alt="Screenshot 2026-01-31 112613" src="https://github.com/user-attachments/assets/d5dfd469-7021-40e8-9414-4d9f91be85c9" />
 <img width="1920" height="1080" alt="Screenshot 2026-01-31 112847" src="https://github.com/user-attachments/assets/e763993f-059d-49c2-ba3b-2029364c10af" />
-<img width="1920" height="1080" alt="S<img width="1920" height="1080" alt="Screenshot 2026-01-31 112826" src="https://github.com/user-attachments/assets/0122919c-eb0a-4948-b36f-3cdb86f801d3" />
-<img width="1920" height="1080" alt="Screenshot 2026-01-31 112826" src="https://github.com/user-attachments/assets/d5193f0e-e5d8-43ee-b610-da4267f0894b" />
-
+<img width="1920" height="1080" alt="Screenshot 2026-01-31 112826" src="https://github.com/user-attachments/assets/0122919c-eb0a-4948-b36f-3cdb86f801d3" />
 
 ---
 ### Demo video:
 
 
-
 https://github.com/user-attachments/assets/4caa8237-dd2f-43aa-aa86-ee5f7eb237a1
 
 
+---
+
+# 🔮 Future Scope
+
+- User authentication (Login/Register)
+- User profile history tracking
+- Save previous health plans
+- Advanced calorie calculation engine
+- BMI & body fat analysis
+- AI chatbot integration
+- Mobile app version
+- Doctor appointment integration
 
 ---
+
+
 # 🙏 Acknowledgments
 
 - Google Gemini AI
