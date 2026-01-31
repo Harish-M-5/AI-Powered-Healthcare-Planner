@@ -1,17 +1,10 @@
-# AI-Powered-Healthcare-Planner
+
+##  🏥 AI Powered Healthcare Planner
+
 AI Healthcare Planner is a Full Stack AI-powered web application that generates personalized diet plans, calorie calculations, workout routines, hydration advice, sleep recommendations, and lifestyle suggestions based on user input. using React,FastAPI and Gemini
 
 ---
 
-# 🏥 AI Healthcare Planner (Full Stack AI SaaS)
-
-## 📌 Description
-
-AI Healthcare Planner is a full stack AI-powered web application that generates personalized diet plans, hydration plans, workout routines, sleep suggestions, and lifestyle guidance based on user health inputs.  
-
-It uses React for frontend, FastAPI for backend, and Google Gemini AI for intelligent health plan generation. The application also auto-generates a downloadable PDF report for users.
-
----
 
 # 🚀 Overview
 
@@ -49,7 +42,7 @@ The system ensures a structured and visually organized output UI.
 - AI chatbot integration
 - Mobile app version
 - Doctor appointment integration
-- Deployment on cloud (AWS / Azure / GCP)
+
 
 ---
 
@@ -821,7 +814,7 @@ From this project, you will learn:
 Environment Variable Recommended:
 
 ```
-set GEMINI_API_KEY=your_api_key_here
+set GEMINI_API_KEY=AIzaSyB-NpvA67DDWNL9X42Cx3b42fzS_9gNosw
 ```
 
 Then in Python:
