@@ -584,14 +584,11 @@ From this project, you will learn:
 
 # 🔑 Key Concepts Covered
 
-- REST API
-- Async programming
+- API
 - Prompt Engineering
 - JSON validation
 - CORS configuration
 - AI integration in Full Stack
-- Stateless API architecture
-- Microservice AI flow
 
 ---
 
@@ -624,7 +621,7 @@ From this project, you will learn:
 Environment Variable Recommended:
 
 ```
-set GEMINI_API_KEY=AIzaSyB-NpvA67DDWNL9X42Cx3b42fzS_9gNosw
+set GEMINI_API_KEY=My API Key
 ```
 
 Then in Python:
