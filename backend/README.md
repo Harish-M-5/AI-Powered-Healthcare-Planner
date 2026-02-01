@@ -123,7 +123,7 @@ item: Item
     * ...and many more.
 * Automatic interactive API documentation, including 2 alternative user interfaces:
     * Swagger UI.
-    * ReDoc.
+    * ReDoc
 
 
 ---
